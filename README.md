@@ -18,7 +18,7 @@ Each file is a simple YAML list. Start with your name. `pic` and `site` are opti
   site: https://example.com/
 ```
 
-Where `photo-file.jpg` is your profile picture in the `assets/` folder (it can be any image format, not just JPEG).
+where `photo-file.jpg` is your profile picture in the `assets/` folder (it can be any image format, not just JPEG).
 If you don't specify a profile picture, it will show up as a black square on the website.
 
 ## Build instructions
