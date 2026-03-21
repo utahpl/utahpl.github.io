@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @font-face {
-    font-family: 'CooperHewitt';
+    font-family: 'CooperHewittBook';
     src: url('/assets/CooperHewitt-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CooperHewittMedium';
+    src: url('/assets/CooperHewitt-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,14 +33,36 @@ body {
     position: relative;
 }
 
-header { margin: 1em 0 2em; column-span: all; }
+header {
+    margin: 1em 0 2em;
+    column-span: all;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
 
 header img {
   display: inline-block;
   margin: 0;
   height: auto;
-  width: 300px;
+  width: min(155px, 100%);
   padding: 0;
+}
+
+header .site-title {
+    font-family: 'CooperHewittMedium', sans-serif;
+    margin: 0;
+    color: #111;
+    line-height: 1.35;
+    font-size: 1.2rem;
+    font-weight: normal;
+    align-self: center;
+    transform: translateY(0.12em);
+}
+
+header .site-title span {
+    color: #DA2F20;
 }
 
 ul.photo-list {
@@ -88,7 +117,8 @@ ul.photo-list a:hover .caption {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'CooperHewitt', sans-serif;
+    font-family: 'CooperHewittBook', sans-serif;
+    font-weight: normal;
     vertical-align: baseline;
     color: #DA2F20;
 }
