@@ -38,7 +38,7 @@ header img {
 
 ul.photo-list {
     list-style-type: none;
-    List-style-position: inside;
+    list-style-position: inside;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;

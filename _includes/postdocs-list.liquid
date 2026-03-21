@@ -1,5 +1,8 @@
+{% if postdocs and postdocs.size > 0 %}
+<h2>Postdocs</h2>
 <ul class="photo-list">
 {% for person in postdocs %}
   <li>{% if person.site %}<a href="{{ person.site }}">{% endif %}{% if person.pic %}<img src="/assets/{{ person.pic }}" alt="{{ person.name }}" />{% endif %}<span class="caption">{{ person.name }}</span>{% if person.site %}</a>{% endif %}</li>
 {% endfor %}
 </ul>
+{% endif %}

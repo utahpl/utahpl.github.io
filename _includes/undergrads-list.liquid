@@ -1,5 +1,8 @@
+{% if undergrads and undergrads.size > 0 %}
+<h2>Undergrads</h2>
 <ul class="photo-list">
 {% for person in undergrads %}
   <li>{% if person.site %}<a href="{{ person.site }}">{% endif %}{% if person.pic %}<img src="/assets/{{ person.pic }}" alt="{{ person.name }}" />{% endif %}<span class="caption">{{ person.name }}</span>{% if person.site %}</a>{% endif %}</li>
 {% endfor %}
 </ul>
+{% endif %}
