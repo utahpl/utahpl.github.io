@@ -43,6 +43,13 @@ header {
     flex-wrap: wrap;
 }
 
+header a,
+header a:visited,
+header a:hover,
+header a:active {
+  text-decoration: none;
+}
+
 header img {
   display: inline-block;
   margin: 0;
