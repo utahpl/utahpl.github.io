@@ -1,14 +1,18 @@
 - name: Matthew Flatt
+  pic: matthew.png
 
 - name: Eric Eide
-
+  pic: eeide-chilling.jpg
 
 - name: Ganesh Gopalakrishnan
+  pic: ganesh-cropped.jpg
 
 - name: Ben Greenman
+  pic: ben-cropped.jpg
 
 - name: Pavel Panchekha
   pic: pavpanchekha.jpg
   site: https://pavpanchekha.com/
 
 - name: John Regehr
+  pic: john-cropped.jpg
