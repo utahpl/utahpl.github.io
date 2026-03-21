@@ -1,6 +1,6 @@
 # PLUtah website
 
-## Adding data
+## Adding your name and profile picture
 
 To add yourself to the site, add yourself to the matching file in `_data/`:
 
@@ -18,10 +18,8 @@ Each file is a simple YAML list. Start with your name. `pic` and `site` are opti
   site: https://example.com/
 ```
 
-Notes:
-- Put your photo in `assets/` and set `pic` to that filename (for example `jane-doe.jpg`).
-- If you skip `pic`, you still show up with a name-only tile.
-- If you add `site`, your tile links to that URL.
+Where `photo-file.jpg` is your profile picture in the `assets/` folder (it can be any image format, not just JPEG).
+If you don't specify a profile picture, it will show up as a black square on the website.
 
 ## Build instructions
 
