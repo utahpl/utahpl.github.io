@@ -36,11 +36,9 @@ body {
 
 header {
     margin: 1em 0 2em;
-    column-span: all;
     display: flex;
     align-items: center;
     gap: 16px;
-    flex-wrap: wrap;
 }
 
 header a,
@@ -50,12 +48,16 @@ header a:active {
   text-decoration: none;
 }
 
+header a {
+  display: block;
+  line-height: 0;
+}
+
 header img {
-  display: inline-block;
+  display: block;
   margin: 0;
+  width: 170px;
   height: auto;
-  width: min(170px, 100%);
-  padding: 0;
 }
 
 header .site-title {
@@ -65,7 +67,6 @@ header .site-title {
     line-height: 1.35;
     font-size: 1.2rem;
     font-weight: normal;
-    align-self: center;
     transform: translateY(0.12em);
 }
 
