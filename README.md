@@ -37,7 +37,6 @@ npm ci
 npx @11ty/eleventy --serve
 ```
 
-
 ## Contrib
 
 PLUtah lab
