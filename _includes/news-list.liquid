@@ -1,0 +1,18 @@
+{% if news and news.size > 0 %}
+<h2>News</h2>
+<ul class="news-list">
+{% assign max_items = limit | default: include.limit | default: 0 | plus: 0 %}
+{% assign shown_items = 0 %}
+{% assign news_items = news | sortByDateDesc: "date" %}
+{% for item in news_items %}
+  {% if max_items > 0 and shown_items >= max_items %}
+    {% break %}
+  {% endif %}
+  <li>
+    <time datetime="{{ item.date | date: "%Y-%m-%d" }}">{{ item.date | date: "%B %d, %Y" }}</time>
+    {{ item.info | renderContent: "md" }}
+  </li>
+  {% assign shown_items = shown_items | plus: 1 %}
+{% endfor %}
+</ul>
+{% endif %}

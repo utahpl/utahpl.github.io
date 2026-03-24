@@ -84,6 +84,29 @@ ul.photo-list {
     padding: 0;
 }
 
+ul.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.news-list p {
+    margin: 0;
+}
+
+ul.news-list li {
+    margin-bottom: 0.6rem;
+}
+
+ul.news-list li:last-child {
+    margin-bottom: 0;
+}
+
+ul.news-list time {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
 ul.photo-list li {
     width: 20%;
     height: auto;
