@@ -3,14 +3,13 @@
 <ul class="alumni-list">
 {%- assign sorted_alumni = msc_bsc_alumni | sort: "name" -%}
 {%- for person in sorted_alumni -%}
-{%- assign href = person.url | default: person.site -%}
-<li>
-{%- if href -%}
-<a class="row" href="{{ href }}"><span><span class="name">{{ person.name }}</span></span>{%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}</a>
-{%- else -%}
-<span class="row"><span><span class="name">{{ person.name }}</span></span>{%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}</span>
-{%- endif -%}
-</li>
+  {%- assign href = person.url | default: person.site -%}
+  <li>
+    {%- if href -%}<a class="row" href="{{ href }}">{%- else -%}<span class="row">{%- endif -%}
+      <span><span class="name">{{ person.name }}</span></span>
+      {%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}
+    {%- if href -%}</a>{%- else -%}</span>{%- endif -%}
+  </li>
 {%- endfor -%}
 </ul>
 {%- endif -%}

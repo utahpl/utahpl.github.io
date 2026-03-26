@@ -84,24 +84,24 @@ ul.photo-list {
     padding: 0;
 }
 
-ul.news-list {
+.news-list {
     list-style: none;
     padding-left: 0;
 }
 
-ul.news-list p {
+.news-list p {
     margin: 0;
 }
 
-ul.news-list li {
+.news-list li {
     margin-bottom: 0.6rem;
 }
 
-ul.news-list li:last-child {
+.news-list li:last-child {
     margin-bottom: 0;
 }
 
-ul.news-list time {
+.news-list time {
     font-family: "Source Code Pro", monospace;
     font-size: 0.75em;
     text-transform: uppercase;
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
 }
 
-ul.alumni-list {
+.alumni-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -239,6 +239,7 @@ ul.alumni-list time {
     font-size: 0.8em;
     color: #555;
     white-space: nowrap;
+    margin-left: 0.35rem;
 }
 
 @media (max-width: 720px) {
@@ -255,14 +256,4 @@ a {
 a:hover {
     color: #3465a4;
     text-decoration: underline;
-}
-
-footer {
-    margin-top: 2em;
-}
-
-footer img {
-    height: 1.5em;
-    width: auto;
-    display: block;
 }

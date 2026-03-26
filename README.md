@@ -28,6 +28,16 @@ recommend to use `.webp` for your images.
 
 Please put the full url address of your website under the site key!
 
+For alumni entries, `where` is optional and graduation dates are only rendered
+when the YAML includes an explicit `year` field:
+
+```yaml
+- name: First Last
+  year: 2024
+  where: Example Corp
+  url: https://example.com/
+```
+
 ## Build instructions
 
 Needs `npm`.

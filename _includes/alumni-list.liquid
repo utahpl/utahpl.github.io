@@ -3,16 +3,14 @@
 <ul class="alumni-list">
 {%- assign sorted_alumni = alumni | sort: "name" -%}
 {%- for person in sorted_alumni -%}
-{%- assign href = person.url | default: person.site -%}
-{%- assign year_offset = forloop.index0 | times: 3 | modulo: 38 -%}
-{%- assign grad_year = 1987 | plus: year_offset -%}
-<li>
-{%- if href -%}
-<a class="row" href="{{ href }}"><span><span class="name">{{ person.name }}</span>&nbsp;<time datetime="{{ grad_year }}">{{ grad_year }}</time></span>{%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}</a>
-{%- else -%}
-<span class="row"><span><span class="name">{{ person.name }}</span>&nbsp;<time datetime="{{ grad_year }}">{{ grad_year }}</time></span>{%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}</span>
-{%- endif -%}
-</li>
+  {%- assign href = person.url | default: person.site -%}
+  {%- assign year = person.year | default: person.grad_year | default: person.graduated | default: person.date -%}
+  <li>
+    {%- if href -%}<a class="row" href="{{ href }}">{%- else -%}<span class="row">{%- endif -%}
+      <span><span class="name">{{ person.name }}</span>{% if year %} <time datetime="{{ year }}">{{ year }}</time>{% endif %}</span>
+      {%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}
+    {%- if href -%}</a>{%- else -%}</span>{%- endif -%}
+  </li>
 {%- endfor -%}
 </ul>
 {%- endif -%}
