@@ -219,11 +219,11 @@ ul.alumni-list .row > span:first-child {
 }
 
 ul.alumni-list a.row .name {
-    color: #204a87;
+    color: #3366cc;
 }
 
 ul.alumni-list a.row:hover .name {
-    color: #3465a4;
+    color: #3056a9;
     text-decoration: underline;
 }
 
@@ -249,18 +249,28 @@ ul.alumni-list time {
 }
 
 a {
-    color: #204a87;
+    color: #3366cc;
     text-decoration: none;
+    text-underline-offset: 0.14em;
+    text-decoration-thickness: 0.07em;
+}
+
+a:visited {
+    color: #6a60b0;
 }
 
 a:hover {
-    color: #3465a4;
+    color: #3056a9;
     text-decoration: underline;
+}
+
+a:active {
+    color: #233566;
 }
 
 footer {
     margin-top: 2rem;
-    color: #777;
+    color: #424242;
     font-size: 0.7rem;
     text-align: center;
 }

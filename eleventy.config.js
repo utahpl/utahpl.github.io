@@ -14,6 +14,10 @@ module.exports = async function (eleventyConfig) {
   const { RenderPlugin } = await import("@11ty/eleventy");
   eleventyConfig.addPlugin(RenderPlugin);
 
+  // Keep repository docs from being emitted as site pages.
+  eleventyConfig.ignores.add("README.md");
+  eleventyConfig.ignores.add("TODO.md");
+
   eleventyConfig.addFilter("sortByDateDesc", (items, key = "date") => {
     if (!Array.isArray(items)) return items;
     return [...items].sort((a, b) => {
