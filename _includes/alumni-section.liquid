@@ -7,7 +7,7 @@
   <li>
     {%- if href -%}<a class="row" href="{{ href }}">{%- else -%}<span class="row">{%- endif -%}
       <span><span class="name">{{ person.name }}</span>{% if show_year and year %} <time datetime="{{ year }}">{{ year }}</time>{% endif %}</span>
-      {%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}
+      {% if person.where %} <span class="where">{{ person.where }}</span>{% endif %}
     {%- if href -%}</a>{%- else -%}</span>{%- endif -%}
   </li>
 {%- endfor -%}
