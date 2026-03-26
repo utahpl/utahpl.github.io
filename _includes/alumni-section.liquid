@@ -1,8 +1,7 @@
 {%- if people and people.size > 0 -%}
 <h2>{{ title }}</h2>
 <ul class="alumni-list">
-{%- assign sorted_alumni = people | sort: "name" -%}
-{%- for person in sorted_alumni -%}
+{%- for person in people -%}
   {%- assign href = person.url | default: person.site -%}
   {%- assign year = person.year | default: person.grad_year | default: person.graduated | default: person.date -%}
   <li>

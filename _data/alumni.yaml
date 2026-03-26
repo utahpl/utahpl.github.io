@@ -11,48 +11,199 @@
   where: Nvidia
   url: https://www.linkedin.com/in/manasij7479/
   advised: John Regehr
+  date: 2024
 
 - name: Zhengyang Liu
   where: Tenstorrent
   url: https://users.cs.utah.edu/~liuz/
   advised: John Regehr
+  date: 2024
 
 - name: Vsevolod Livinskii
   url: https://livinskii.com/
   where: Nvidia
   advised: John Regehr
+  date: 2024
 
 - name: Jubi Taneja
   url: https://www.jubitaneja.com/
   where: Gimlet Labs
   advised: John Regehr
+  date: 2021
 
 - name: Xuejun Yang
   url: https://www.linkedin.com/in/xuejun-yang-63b5572b/
   where: Microsoft
   advised: John Regehr
+  date: 2014
 
 - name: Yang Chen
   where: Anthropic
   url: https://www.linkedin.com/in/yang-chen-00503970/
   advised: John Regehr
+  date: 2013
 
 - name: Jianjun Duan
   where: ByteDance
   url: https://www.linkedin.com/in/jianjun-duan-861b7a58/
   advised: John Regehr
+  date: 2013
 
 - name: Anton Burtsev
   where: UUtah
   url: https://mars-research.github.io/aburtsev/
   advised: John Regehr
+  date: 2012
 
 - name: Lu Zhao
   where: Secregen
   url: https://www.linkedin.com/in/lu-zhao-8441a939/
   advised: John Regehr
+  date: 2012
 
 - name: Nathan Cooprider
   where: STR
   url: https://www.linkedin.com/in/ncooprider/
   advised: John Regehr
+  date: 2008
+
+# ganesh
+
+- name: Tripti Agarwal
+  where: AWS
+  date: 2026
+  url: https://www.linkedin.com/in/tripti-agarwal-b395a914a/
+
+- name: Tanmay Tirpankar
+  where: Nvidia
+  url: https://www.linkedin.com/in/tanmaytirpankar/
+  date: 2025
+
+- name: Mark Baranowski
+  where: UUtah
+  url: https://soarlab.org/team/baranowski/
+  date: 2024
+
+- name: Than Son Nguyen
+  where: AWS
+  date: 2024
+  url: https://soarlab.org/team/nguyen/
+
+- name: Xinyi Li
+  where: Together AI
+  date: 2024
+  url: https://www.linkedin.com/in/xinyi-li-5803b7120/?locale=en
+
+- name: Saeed Taheri
+  where: eBay
+  date: 2021
+  url: https://staheri.github.io/
+
+- name: Vinu Joseph
+  where: Nvidia
+  date: 2021
+  url: https://research.nvidia.com/person/vinu-joseph
+
+- name: Mohammed S. Al-Mahfoudh
+  date: 2021
+  url: https://sites.google.com/site/mohammedmahfoudh
+
+- name: Arnab Das
+  where: Apple
+  date: 2020
+  url: https://www.linkedin.com/in/arnabd88/
+
+- name: Simone Atzeni
+  where: Nvidia
+  date: 2017
+  url: https://www.linkedin.com/in/simone-atzeni-phd-59831157/
+
+- name: Wei-Fan Chiang
+  where: Crogl
+  date: 2016
+  url: https://www.linkedin.com/in/wfchiang/
+
+- name: Vishal Sharma
+  where: AWS
+  date: 2016
+
+- name: Sriram Aananthakrishnan
+  where: Intel
+  date: 2016
+
+- name: Peng Li
+  where: Zoox
+  date: 2015
+  url: https://lipeng28.github.io/
+
+- name: Subodh Sharma
+  where: IIT-D
+  date: 2012
+  url: https://subodhvsharma.github.io/
+
+- name: Anh Vo
+  where: Microsoft
+  date: 2011
+  url: https://www.linkedin.com/in/anh-vo-9855a25/
+
+- name: Sarvani Vakkalanka
+  where: Google
+  date: 2010
+  url: https://www.linkedin.com/in/sarvani-vakkalanka-9691b767/
+
+- name: Guodong Li
+  where: Apple
+  date: 2010
+  url: https://www.linkedin.com/in/guodong-li-26a78421/
+
+- name: Yu Yang
+  where: Verkada
+  date: 2009
+  url: https://www.linkedin.com/in/yuyang/
+
+- name: Xiaofang Chen
+  where: Pinterest
+  date: 2008
+  url: https://www.linkedin.com/in/xiaofangchen/
+
+- name: Robert Palmer
+  where: Qualcomm
+  date: 2007
+  url: https://www.linkedin.com/in/therobertpalmer/
+
+- name: Ritwik Bhattacharya
+  where: Careforth
+  date: 2006
+  url: https://www.linkedin.com/in/ritwik/
+
+- name: Ali Sezgin
+  where: Meta
+  date: 2004
+  url: https://www.linkedin.com/in/ali-sezgin-a293011b/
+
+- name: Yue Yang
+  where: Oracle Health
+  date: 2004
+
+- name: Mike Jones
+  where: BYU
+  date: 2001
+  url: https://cs.byu.edu/department/directories/faculty-directory/michael-jones/
+
+- name: Ravi Hosabettu
+  where: Microsoft
+  date: 2000
+
+- name: Ratan Nalumasu
+  where: Google
+  date: 1999
+
+- name: Prabhakar Kudva
+  where: IBM
+  date: 1996
+  url: https://www.linkedin.com/in/prabhakar-kudva-65858029/
+
+- name: Venkatesh Akella
+  where: UCDavis
+  date: 1992
+  url: https://ece.ucdavis.edu/directory/venkatesh-akella
