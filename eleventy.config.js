@@ -10,6 +10,12 @@ function lastName(value) {
   return "";
 }
 
+function alumniYear(person) {
+  const rawYear = person?.year ?? person?.grad_year ?? person?.graduated ?? person?.date;
+  const year = Number.parseInt(rawYear, 10);
+  return Number.isFinite(year) ? year : 0;
+}
+
 module.exports = async function (eleventyConfig) {
   const { RenderPlugin } = await import("@11ty/eleventy");
   eleventyConfig.addPlugin(RenderPlugin);
@@ -29,6 +35,15 @@ module.exports = async function (eleventyConfig) {
       if (aValid) return -1;
       if (bValid) return 1;
       return 0;
+    });
+  });
+
+  eleventyConfig.addFilter("sortAlumni", items => {
+    if (!Array.isArray(items)) return items;
+    return [...items].sort((a, b) => {
+      const yearDiff = alumniYear(b) - alumniYear(a);
+      if (yearDiff !== 0) return yearDiff;
+      return lastName(a).localeCompare(lastName(b));
     });
   });
 
