@@ -12,16 +12,16 @@ _pragmatic programming language research_.
 [More…](news/)
 {% endif %}
 
-{% include "faculty-list.liquid" %}
+{% include "photo-list.liquid", title: "Faculty", people: faculty %}
 
-{% include "postdocs-list.liquid" %}
+{% include "photo-list.liquid", title: "Postdocs", people: postdocs %}
 
-{% include "phd-students-list.liquid" %}
+{% include "photo-list.liquid", title: "Ph.D. Students", people: phd_students %}
 
-{% include "masters-students-list.liquid" %}
+{% include "photo-list.liquid", title: "Masters Students", people: masters_students %}
 
-{% include "undergrads-list.liquid" %}
+{% include "photo-list.liquid", title: "Undergrads", people: undergrads %}
 
-{% include "alumni-list.liquid" %}
+{% include "alumni-section.liquid", title: "Ph.D. Alumni", people: alumni, show_year: true %}
 
-{% include "msc-bsc-alumni-list.liquid" %}
+{% include "alumni-section.liquid", title: "M.Sc. and B.Sc. Alumni", people: msc_bsc_alumni %}

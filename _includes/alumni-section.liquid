@@ -1,13 +1,13 @@
-{%- if alumni and alumni.size > 0 -%}
-<h2>Ph.D. Alumni</h2>
+{%- if people and people.size > 0 -%}
+<h2>{{ title }}</h2>
 <ul class="alumni-list">
-{%- assign sorted_alumni = alumni | sort: "name" -%}
+{%- assign sorted_alumni = people | sort: "name" -%}
 {%- for person in sorted_alumni -%}
   {%- assign href = person.url | default: person.site -%}
   {%- assign year = person.year | default: person.grad_year | default: person.graduated | default: person.date -%}
   <li>
     {%- if href -%}<a class="row" href="{{ href }}">{%- else -%}<span class="row">{%- endif -%}
-      <span><span class="name">{{ person.name }}</span>{% if year %} <time datetime="{{ year }}">{{ year }}</time>{% endif %}</span>
+      <span><span class="name">{{ person.name }}</span>{% if show_year and year %} <time datetime="{{ year }}">{{ year }}</time>{% endif %}</span>
       {%- if person.where -%}<span class="where">{{ person.where }}</span>{%- endif -%}
     {%- if href -%}</a>{%- else -%}</span>{%- endif -%}
   </li>
