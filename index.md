@@ -6,6 +6,7 @@ title: PLUtah
 The Programming Languages group at the [University of
 Utah](https://www.utah.edu/) has a decades-long history of breakthroughs in
 _pragmatic programming language research_.
+
 Notable projects developed/maintained by our group included
 [CSmith](https://github.com/csmith-project/csmith),
 [CReduce](https://github.com/csmith-project/csmith), [Racket](https://racket-lang.org/),
